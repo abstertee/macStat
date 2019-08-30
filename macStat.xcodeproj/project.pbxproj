@@ -13,6 +13,20 @@
 		D05FE119231988F800C7C3A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05FE117231988F800C7C3A1 /* Main.storyboard */; };
 		D05FE125231988F800C7C3A1 /* macStatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FE124231988F800C7C3A1 /* macStatTests.swift */; };
 		D05FE130231988F800C7C3A1 /* macStatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FE12F231988F800C7C3A1 /* macStatUITests.swift */; };
+		D05FE13F231989CE00C7C3A1 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FE13E231989CE00C7C3A1 /* AppConstants.swift */; };
+		D05FE14123198A8400C7C3A1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FE14023198A8400C7C3A1 /* Logger.swift */; };
+		D05FE14323198AF000C7C3A1 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FE14223198AF000C7C3A1 /* EventMonitor.swift */; };
+		D05FE1462319925F00C7C3A1 /* StatusViewMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FE1452319925F00C7C3A1 /* StatusViewMenu.swift */; };
+		D05FE148231992E000C7C3A1 /* FullAppWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FE147231992E000C7C3A1 /* FullAppWindow.swift */; };
+		D05FE14C231994C900C7C3A1 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = D05FE14B231994C900C7C3A1 /* Settings.plist */; };
+		D05FE14E2319974400C7C3A1 /* NetworkClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FE14D2319974400C7C3A1 /* NetworkClass.swift */; };
+		D05FE1502319978F00C7C3A1 /* ShellCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FE14F2319978F00C7C3A1 /* ShellCommand.swift */; };
+		D05FE1522319985C00C7C3A1 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FE1512319985C00C7C3A1 /* Notification.swift */; };
+		D05FE154231998B500C7C3A1 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FE153231998B500C7C3A1 /* Timer.swift */; };
+		D05FE156231998F300C7C3A1 /* SettingsReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FE155231998F300C7C3A1 /* SettingsReader.swift */; };
+		D05FE1582319996000C7C3A1 /* InfoTabChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FE1572319996000C7C3A1 /* InfoTabChecks.swift */; };
+		D05FE15A2319997500C7C3A1 /* StatusTabChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FE1592319997500C7C3A1 /* StatusTabChecks.swift */; };
+		D05FE15C2319B7E100C7C3A1 /* Segue0.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FE15B2319B7E100C7C3A1 /* Segue0.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +60,20 @@
 		D05FE12B231988F800C7C3A1 /* macStatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macStatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05FE12F231988F800C7C3A1 /* macStatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macStatUITests.swift; sourceTree = "<group>"; };
 		D05FE131231988F800C7C3A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D05FE13E231989CE00C7C3A1 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		D05FE14023198A8400C7C3A1 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		D05FE14223198AF000C7C3A1 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		D05FE1452319925F00C7C3A1 /* StatusViewMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewMenu.swift; sourceTree = "<group>"; };
+		D05FE147231992E000C7C3A1 /* FullAppWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullAppWindow.swift; sourceTree = "<group>"; };
+		D05FE14B231994C900C7C3A1 /* Settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		D05FE14D2319974400C7C3A1 /* NetworkClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClass.swift; sourceTree = "<group>"; };
+		D05FE14F2319978F00C7C3A1 /* ShellCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellCommand.swift; sourceTree = "<group>"; };
+		D05FE1512319985C00C7C3A1 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		D05FE153231998B500C7C3A1 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		D05FE155231998F300C7C3A1 /* SettingsReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsReader.swift; sourceTree = "<group>"; };
+		D05FE1572319996000C7C3A1 /* InfoTabChecks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTabChecks.swift; sourceTree = "<group>"; };
+		D05FE1592319997500C7C3A1 /* StatusTabChecks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTabChecks.swift; sourceTree = "<group>"; };
+		D05FE15B2319B7E100C7C3A1 /* Segue0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue0.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,12 +124,15 @@
 		D05FE110231988F500C7C3A1 /* macStat */ = {
 			isa = PBXGroup;
 			children = (
-				D05FE111231988F500C7C3A1 /* AppDelegate.swift */,
-				D05FE113231988F500C7C3A1 /* ViewController.swift */,
 				D05FE115231988F800C7C3A1 /* Assets.xcassets */,
-				D05FE117231988F800C7C3A1 /* Main.storyboard */,
 				D05FE11A231988F800C7C3A1 /* Info.plist */,
 				D05FE11B231988F800C7C3A1 /* macStat.entitlements */,
+				D05FE111231988F500C7C3A1 /* AppDelegate.swift */,
+				D05FE117231988F800C7C3A1 /* Main.storyboard */,
+				D05FE14A2319941700C7C3A1 /* CheckClasses */,
+				D05FE13D231989C200C7C3A1 /* Constants */,
+				D05FE1492319940E00C7C3A1 /* Resources */,
+				D05FE14423198B5000C7C3A1 /* ViewControllers */,
 			);
 			path = macStat;
 			sourceTree = "<group>";
@@ -122,6 +153,49 @@
 				D05FE131231988F800C7C3A1 /* Info.plist */,
 			);
 			path = macStatUITests;
+			sourceTree = "<group>";
+		};
+		D05FE13D231989C200C7C3A1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D05FE13E231989CE00C7C3A1 /* AppConstants.swift */,
+				D05FE14023198A8400C7C3A1 /* Logger.swift */,
+				D05FE14223198AF000C7C3A1 /* EventMonitor.swift */,
+				D05FE14F2319978F00C7C3A1 /* ShellCommand.swift */,
+				D05FE1512319985C00C7C3A1 /* Notification.swift */,
+				D05FE153231998B500C7C3A1 /* Timer.swift */,
+				D05FE155231998F300C7C3A1 /* SettingsReader.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		D05FE14423198B5000C7C3A1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D05FE113231988F500C7C3A1 /* ViewController.swift */,
+				D05FE1452319925F00C7C3A1 /* StatusViewMenu.swift */,
+				D05FE147231992E000C7C3A1 /* FullAppWindow.swift */,
+				D05FE15B2319B7E100C7C3A1 /* Segue0.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D05FE1492319940E00C7C3A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D05FE14B231994C900C7C3A1 /* Settings.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D05FE14A2319941700C7C3A1 /* CheckClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D05FE14D2319974400C7C3A1 /* NetworkClass.swift */,
+				D05FE1572319996000C7C3A1 /* InfoTabChecks.swift */,
+				D05FE1592319997500C7C3A1 /* StatusTabChecks.swift */,
+			);
+			path = CheckClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +304,7 @@
 			files = (
 				D05FE116231988F800C7C3A1 /* Assets.xcassets in Resources */,
 				D05FE119231988F800C7C3A1 /* Main.storyboard in Resources */,
+				D05FE14C231994C900C7C3A1 /* Settings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +330,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				D05FE114231988F500C7C3A1 /* ViewController.swift in Sources */,
+				D05FE1462319925F00C7C3A1 /* StatusViewMenu.swift in Sources */,
+				D05FE14323198AF000C7C3A1 /* EventMonitor.swift in Sources */,
+				D05FE13F231989CE00C7C3A1 /* AppConstants.swift in Sources */,
+				D05FE148231992E000C7C3A1 /* FullAppWindow.swift in Sources */,
+				D05FE14E2319974400C7C3A1 /* NetworkClass.swift in Sources */,
+				D05FE15A2319997500C7C3A1 /* StatusTabChecks.swift in Sources */,
+				D05FE15C2319B7E100C7C3A1 /* Segue0.swift in Sources */,
+				D05FE1522319985C00C7C3A1 /* Notification.swift in Sources */,
+				D05FE156231998F300C7C3A1 /* SettingsReader.swift in Sources */,
 				D05FE112231988F500C7C3A1 /* AppDelegate.swift in Sources */,
+				D05FE14123198A8400C7C3A1 /* Logger.swift in Sources */,
+				D05FE154231998B500C7C3A1 /* Timer.swift in Sources */,
+				D05FE1502319978F00C7C3A1 /* ShellCommand.swift in Sources */,
+				D05FE1582319996000C7C3A1 /* InfoTabChecks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mdmprofileUUID</key>
+	<string>uuid</string>
+	<key>logopath</key>
+	<string>Application Support/MacStat/mylogo.png</string>
+	<key>documentationUrl</key>
+	<string>https://mydocs.company.com/here/ismy/document</string>
+	<key>userWiFiProfileUuid</key>
+	<string>uuid</string>
+	<key>userCertificate</key>
+	<string>uuid</string>
+	<key>certChain</key>
+	<array>
+		<string>root</string>
+		<string>intermediate</string>
+	</array>
+	<key>notificationSettings</key>
+	<dict>
+		<key>notificationTimer</key>
+		<string>3600.0</string>
+		<key>notificationOn</key>
+		<false/>
+	</dict>
+</dict>
+</plist>
