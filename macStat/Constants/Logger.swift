@@ -10,7 +10,7 @@ import Foundation
 let logger = Log()
 struct Log {
     
-    private var fileExists: Bool?
+    private var fileExists: Bool = false
     private var logFile: URL = AppConstants.AppFiles.ApplicationLog
     
     init() {
@@ -37,6 +37,7 @@ struct Log {
         }
     }
     
+    
     func write(_ entry: String) {
         
         // Setup the timestamp stuff
@@ -45,7 +46,7 @@ struct Log {
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let timeStamp = formatter.string(from: now)
         
-        if self.fileExists! {
+        if self.fileExists {
             var dump = ""
             dump = try! String(contentsOfFile: (logFile.path), encoding: String.Encoding.utf8)
             do {

@@ -228,6 +228,8 @@ class PasswordSync: StatusCheckable {
         }
         
         //  If Enterprise Connect can't connect to a work network
+        let result = shellcommand.shell(eccl, "-p", "connectionStatus")
+        debugPrint(result)
         let connectionStatus = Bool(shellcommand.shell(eccl, "-p", "connectionStatus").split(separator: ":")[1].trimmingCharacters(in: .whitespacesAndNewlines))
         if connectionStatus == false {
             self.success = false
@@ -236,6 +238,8 @@ class PasswordSync: StatusCheckable {
             checksCompletedUpdateUi(statusText: self.statusText, spinner: true, image: self.success, imageHidden: false)
             return
         }
+
+        
         
         let signedInStatus = Bool(shellcommand.shell(eccl, "-p", "signedInStatus").split(separator: ":")[1].trimmingCharacters(in: .whitespacesAndNewlines))
         // If user is not signed in to EC

@@ -18,7 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         debugPrint("CommandLine Arguments: \(CommandLine.arguments)")
-        appIconChange(status: "StatusBarButtonImage")
+        //appIconChange(status: "StatusBarButtonImage")
         eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [weak self] event in
             if let strongSelf = self, strongSelf.popover.isShown {
                 strongSelf.closePopover(sender: event)
@@ -45,8 +45,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     
     func appIconChange(status: String) {
         if let button = statusItem.button {
-            button.image = NSImage(named: NSImage.Name(status))
-        //button.action = #selector(printQuote(_:))
+            //button.image = NSImage(named: NSImage.Name(status))
             button.action = #selector(togglePopover(_:))
         }
     }
