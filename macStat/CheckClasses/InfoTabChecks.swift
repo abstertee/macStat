@@ -217,6 +217,27 @@ struct AccountType: InfoCheckable {
     }
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////
+struct DaysPwExpire: InfoCheckable {
+    var statusTextField: NSTextField
+    
+    var name: String
+    
+    func checkFunction() {
+        shellcommand.shellHandler(command: AppConstants.Alerts.StatusChecks.EnterpriseConnect.eccl, args: ["-p", "adPasswordDaysUntilExpiration"], completion: {
+            (output, error, status) in
+            if output.isEmpty {
+                DispatchQueue.main.async { self.statusTextField.stringValue = "Failed" }
+                return
+            }
+            DispatchQueue.main.async { self.statusTextField.stringValue = output.split(separator: ":")[1].trimmingCharacters(in: .whitespacesAndNewlines) }
+            
+        })
+        
+    }
+    
+    
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 struct AdBound: InfoCheckable {
     var statusTextField: NSTextField
     var name: String

@@ -218,8 +218,8 @@ class PasswordSync: StatusCheckable {
     
     // Check if Enterprise Connect is in sync
     func checkFunction() {
-        let eccl = "/Applications/Enterprise Connect.app/Contents/SharedSupport/eccl"
-        if FileManager.default.fileExists(atPath: eccl) == false {
+        //let eccl = "/Applications/Enterprise Connect.app/Contents/SharedSupport/eccl"
+        if FileManager.default.fileExists(atPath: AppConstants.Alerts.StatusChecks.EnterpriseConnect.eccl) == false {
             self.success = false
             self.imageView?.image = self.success ? #imageLiteral(resourceName: "good"):#imageLiteral(resourceName: "bad")
             self.statusText = AppConstants.Alerts.StatusChecks.EnterpriseConnect.missingEC
@@ -228,9 +228,9 @@ class PasswordSync: StatusCheckable {
         }
         
         //  If Enterprise Connect can't connect to a work network
-        let result = shellcommand.shell(eccl, "-p", "connectionStatus")
-        debugPrint(result)
-        let connectionStatus = Bool(shellcommand.shell(eccl, "-p", "connectionStatus").split(separator: ":")[1].trimmingCharacters(in: .whitespacesAndNewlines))
+        let result = shellcommand.shell(AppConstants.Alerts.StatusChecks.EnterpriseConnect.eccl, "-p", "connectionStatus")
+        //debugPrint(result)
+        let connectionStatus = Bool(shellcommand.shell(AppConstants.Alerts.StatusChecks.EnterpriseConnect.eccl, "-p", "connectionStatus").split(separator: ":")[1].trimmingCharacters(in: .whitespacesAndNewlines))
         if connectionStatus == false {
             self.success = false
             self.statusText = AppConstants.Alerts.StatusChecks.EnterpriseConnect.connectionFailed
@@ -241,7 +241,7 @@ class PasswordSync: StatusCheckable {
 
         
         
-        let signedInStatus = Bool(shellcommand.shell(eccl, "-p", "signedInStatus").split(separator: ":")[1].trimmingCharacters(in: .whitespacesAndNewlines))
+        let signedInStatus = Bool(shellcommand.shell(AppConstants.Alerts.StatusChecks.EnterpriseConnect.eccl, "-p", "signedInStatus").split(separator: ":")[1].trimmingCharacters(in: .whitespacesAndNewlines))
         // If user is not signed in to EC
         if signedInStatus == false {
             self.success = false
@@ -251,8 +251,8 @@ class PasswordSync: StatusCheckable {
             return
         }
         
-        let pwExpireDate = Int((Double(shellcommand.shell(eccl, "-p", "adPasswordDaysUntilExpiration").split(separator: ":")[1].trimmingCharacters(in: .whitespacesAndNewlines))?.rounded(.toNearestOrAwayFromZero))!)
-        let pwInSync = Bool(shellcommand.shell(eccl, "-P").split(separator: ":")[1].trimmingCharacters(in: .whitespacesAndNewlines))
+        let pwExpireDate = Int((Double(shellcommand.shell(AppConstants.Alerts.StatusChecks.EnterpriseConnect.eccl, "-p", "adPasswordDaysUntilExpiration").split(separator: ":")[1].trimmingCharacters(in: .whitespacesAndNewlines))?.rounded(.toNearestOrAwayFromZero))!)
+        let pwInSync = Bool(shellcommand.shell(AppConstants.Alerts.StatusChecks.EnterpriseConnect.eccl, "-P").split(separator: ":")[1].trimmingCharacters(in: .whitespacesAndNewlines))
         // If user's password is not in sync
         if pwInSync! == false {
             self.success = false

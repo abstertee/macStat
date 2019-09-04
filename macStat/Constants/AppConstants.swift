@@ -67,6 +67,7 @@ struct AppConstants {
                 static let missingAgent = "JAMF agent Not Installed. Please re-install Jamf agent."
             }
             struct EnterpriseConnect {
+                static let eccl = "/Applications/Enterprise Connect.app/Contents/SharedSupport/eccl"
                 static let missingEC = "Could not find Enterprise Connect"
                 static let connectionFailed = "Enterprise Connect can't connect to network."
                 static let userNotSignedIn = "User is not signed in to Enterprise Connect."

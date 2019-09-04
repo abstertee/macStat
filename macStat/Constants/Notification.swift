@@ -16,7 +16,7 @@ class NotificationBanner: NSObject {
         // Create a user notification object and set it's properties.
         let notification = NSUserNotification()
         let bundleIdentifier = Bundle.main.bundleIdentifier!
-        print(bundleIdentifier)
+        //print(bundleIdentifier)
         if text.isEmpty {
             return
         }
