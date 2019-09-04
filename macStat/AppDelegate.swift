@@ -17,8 +17,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        debugPrint("CommandLine Arguments: \(CommandLine.arguments)")
-        //appIconChange(status: "StatusBarButtonImage")
+        //debugPrint("CommandLine Arguments: \(CommandLine.arguments)")
+        appIconChange(status: "macStatIcon")
         eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [weak self] event in
             if let strongSelf = self, strongSelf.popover.isShown {
                 strongSelf.closePopover(sender: event)
@@ -33,20 +33,17 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         // Insert code here to tear down your application
     }
     
+    func appIconChange(status: String) {
+        let button = statusItem.button
+        button?.image = NSImage(named: NSImage.Name(status))
+        button?.action = #selector(togglePopover(_:))
+    }
+    
     @objc func togglePopover(_ sender: Any?) {
         if popover.isShown {
             closePopover(sender: sender)
-            
         } else {
             showPopover(sender: sender)
-            
-        }
-    }
-    
-    func appIconChange(status: String) {
-        if let button = statusItem.button {
-            //button.image = NSImage(named: NSImage.Name(status))
-            button.action = #selector(togglePopover(_:))
         }
     }
     
@@ -56,8 +53,13 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
             
             popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
             eventMonitor?.start()
-            
         }
+    }
+    
+    func closePopover(sender: Any?) {
+        popover.performClose(sender)
+        logger.write("Popover menu item was closed by: \(sender ?? "")")
+        eventMonitor?.stop()
     }
     
     @objc func statusTabChecks_Queue() {
@@ -83,12 +85,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
             
         }
         
-    }
-    
-    func closePopover(sender: Any?) {
-        popover.performClose(sender)
-        logger.write("Popover menu item was closed by: \(sender ?? "")")
-        eventMonitor?.stop()
     }
     
     func appSetup() {

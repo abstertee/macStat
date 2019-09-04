@@ -142,7 +142,7 @@ struct GetHD: InfoCheckable {
         }
         catch {
             //debugPrint(error)
-            logger.write((error as? String)!)
+            logger.write((error as? String ?? "GetHD Failed"))
             DispatchQueue.main.async { self.statusTextField.stringValue = "Check Failed" }
         }
     }

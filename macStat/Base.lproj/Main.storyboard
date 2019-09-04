@@ -202,7 +202,7 @@
                                 <font key="font" metaFont="system"/>
                                 <tabViewItems>
                                     <tabViewItem label="Status" identifier="" id="dxX-KO-JCu">
-                                        <view key="view" ambiguous="YES" id="z4y-mo-3HL">
+                                        <view key="view" id="z4y-mo-3HL">
                                             <rect key="frame" x="10" y="33" width="621" height="393"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
@@ -486,7 +486,7 @@
                                         </view>
                                     </tabViewItem>
                                     <tabViewItem label="Info" identifier="" id="gRg-ZR-syf">
-                                        <view key="view" id="Rrf-j7-cEA">
+                                        <view key="view" ambiguous="YES" id="Rrf-j7-cEA">
                                             <rect key="frame" x="10" y="33" width="621" height="393"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
@@ -823,6 +823,7 @@
                         <outlet property="ecclSpinner" destination="1pk-Ei-05y" id="xyh-JZ-AVq"/>
                         <outlet property="ecclStatus" destination="H7p-SO-EpU" id="9EN-mH-WXf"/>
                         <outlet property="ecclStatusIcon" destination="rXg-fZ-PGn" id="RRF-LV-mEE"/>
+                        <outlet property="ethernetIP" destination="5sd-zh-JeO" id="ZDe-cT-RuD"/>
                         <outlet property="firewallSpinner" destination="XCH-6i-HLt" id="WWf-bK-MOL"/>
                         <outlet property="firewallStatus" destination="EGA-cz-zsF" id="Cw9-Pm-Ltc"/>
                         <outlet property="firewallStatusIcon" destination="Esz-tW-jQT" id="9cG-zE-4s4"/>
@@ -831,10 +832,12 @@
                         <outlet property="fvStatus" destination="HEM-nn-G1c" id="gF1-Fo-I4B"/>
                         <outlet property="fvStatusIcon" destination="X5L-zb-EIB" id="SUh-cv-hMz"/>
                         <outlet property="gpvpnIP" destination="9mc-eI-TGa" id="vIX-nL-JKp"/>
+                        <outlet property="hdAvailable" destination="4r9-08-BVI" id="a4L-mf-4NH"/>
                         <outlet property="jamfImage" destination="wgR-r2-u8T" id="ra5-rc-mDu"/>
                         <outlet property="jamfSpinner" destination="gkM-Mk-YpM" id="D0G-8K-KfH"/>
                         <outlet property="jamfStatusIcon" destination="yv0-xi-kVi" id="WkK-E2-8BN"/>
                         <outlet property="jamfStatusText" destination="Y41-8r-Yml" id="XTr-yN-F5N"/>
+                        <outlet property="ramAvailable" destination="Y9u-o3-u6a" id="l9j-ZM-O9P"/>
                         <outlet property="refreshButton" destination="QaC-ld-F30" id="V3k-cp-Khr"/>
                         <outlet property="rootcertImage" destination="0J6-b3-mhB" id="7lf-s6-f62"/>
                         <outlet property="rootcertSpinner" destination="7rF-eB-0bw" id="WCz-Fi-pt6"/>
