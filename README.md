@@ -3,12 +3,12 @@
 # Overview
 A Mac menu bar tool that shows the state of various checks on the system.
 
-![FullScreen](https://github.com/abstertee/macStat/blob/master/fullscreen.png?raw=true)
-
 ### What is the macStat application?  
 This application is designed to provide a central view of your system compliance and configuration status. The various checks include status on wireless connectivity, Active Directory binding, certificate chain installation, and more.
 
 ## Status Tab
+
+![FullScreen](https://github.com/abstertee/macStat/blob/master/fullscreen.png?raw=true)
 
 The status tab displays information regarding your laptop’s compliance, certificate, and network status. Each check runs commands in the background and returns text responses to describe the laptop’s current status. The macStat app runs eight checks which verify that your laptop is configured and working properly, reference the list below: 
 
@@ -60,6 +60,9 @@ If the user certificate profile is missing, it’s possible the certificate requ
 
 
 ## Info Tab
+
+![InfoScreen](https://github.com/abstertee/macStat/blob/master/infoscreen.png?raw=true)
+
 The info tab collects basic networking, user, and system information and places it in a single window to assist in troubleshooting.  
 
 ### User Info
