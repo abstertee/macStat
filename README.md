@@ -1,8 +1,9 @@
 # macStat
 
-
 # Overview
 A Mac menu bar tool that shows the state of various checks on the system.
+
+![Image of app](https://www.dropbox.com/s/ahcjzpogcus5yjp/fullscreen.png?dl=0)
 
 ### What is the macStat application?  
 This application is designed to provide a central view of your system compliance and configuration status. The various checks include status on wireless connectivity, Active Directory binding, certificate chain installation, and more.
